@@ -25,10 +25,11 @@
   </head>
 
   <body>
+    <h1>Chat with us -> Buywithus.</h1>
     <div id="webchat" role="main"></div>
     <script type="text/babel" data-presets="es2015,react,stage-3">
       (async function() {
-        const res = await fetch('https://buywithus-bot-service.azurewebsites.net/v3/directline/tokens/generate', { method: 'POST' });
+        const res = await fetch('https://webchat-mockbot.azurewebsites.net', { method: 'POST' });
         const { token } = await res.json();
         const { ReactWebChat } = window.WebChat;
 
