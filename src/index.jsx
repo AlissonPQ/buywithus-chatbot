@@ -12,7 +12,7 @@ export default class extends React.Component {
   render() {
     return (
       <ReactWebChat directLine={ this.directLine } userID='YOUR_USER_ID' />
-      element
+      
     );
   }
 }
